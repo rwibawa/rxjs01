@@ -4,7 +4,7 @@ const { Observable } = require('rxjs');
 const source$ = Observable.range(0, 10);
 
 source$
-// .filter(x => !(x % 2))
-// .map(x => x * 2)
-// .reduce((acc, value) => acc + value, 0)
+.filter(x => !(x % 2))
+.map(x => x * 2)
+.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 .subscribe(console.log);
